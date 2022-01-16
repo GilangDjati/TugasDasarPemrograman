@@ -1,4 +1,4 @@
-// Program Penjumlahan Deret Bilangan Ganjil
+// Program Penjumlahan Deret Bilangan Genap
 
 #include <iostream>
 
@@ -12,13 +12,13 @@ int main()
     int jumlah;
 
 // Algoritma
-    cout << "Program Penjumlahan Deret Bilangan Ganjil" << endl;
-    cout << "=========================================" << endl << endl;
+    cout << "Program Penjumlahan Deret Bilangan Genap" << endl;
+    cout << "========================================" << endl << endl;
     cout << "Masukkan n: ";
     cin >> n;
     for (int i=1; i<=n; i++)
         {
-            if (i%2!=0)
+            if (i%2==0)
                 {
                     jumlah=jumlah+i;
                     cout << i << " + ";

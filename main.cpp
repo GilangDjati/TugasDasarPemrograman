@@ -1,4 +1,4 @@
-// Program Penjumlahan Deret Bilangan Genap
+// Program Penjumlahan Deret Bilangan Prima
 
 #include <iostream>
 
@@ -7,24 +7,36 @@ using namespace std;
 int main()
 {
 // Kamus
-    int i=1;                                                                // i sebagai bilangan
-    int n;                                                                  // n sebagai batas bilangan
-    int jumlah;
+    int in, faktor;
+    int out=0;
+    int cou=2;
+    int jumlah=0;
 
 // Algoritma
-    cout << "Program Penjumlahan Deret Bilangan Genap" << endl;
+    cout << "Program Penjumlahan Deret Bilangan Prima" << endl;
     cout << "========================================" << endl << endl;
     cout << "Masukkan n: ";
-    cin >> n;
-    for (int i=1; i<=n; i++)
+    cin >> in;
+    while (out<in)
         {
-            if (i%2==0)
+            faktor=0;
+            for (int i=1; i<=cou; i++)
                 {
-                    jumlah=jumlah+i;
-                    cout << i << " + ";
+                    if (cou%i==0)
+                        {
+                            faktor++;
+                        }
                 }
+            if (faktor==2)
+                {
+                    cout << cou << " + " << " ";
+                    out++;
+                    jumlah+=cou;
+                }
+            cou++;
         }
-    cout << " = " << jumlah << endl;
-    cout << "Finish" << endl;
+        cout << " = " << jumlah << endl;
+        cout << "Finish" << endl;
+
     return 0;
 }

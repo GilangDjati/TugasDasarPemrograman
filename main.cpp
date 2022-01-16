@@ -1,4 +1,4 @@
-// Program Segitiga Bintang
+// Program Menentukan Ketinggian Maksimal Terbang Drone
 
 #include <iostream>
 
@@ -7,18 +7,22 @@ using namespace std;
 int main()
 {
 // Kamus
-    int b, k, t;
+    int a;
 
 // Algoritma
-    cout << "Masukkan tinggi segitiga bintang = ";
-    cin >>t;
-    for (b=1; b<=t; b++)
-    {
-        for (k=b; k<=t; k++)
+    cout << "Program Menentukan Ketinggian Maksimal Terbang Drone" << endl;
+    cout << "====================================================" << endl;
+    cout << "Masukkan angka " ;
+    cin >> a;
+    if (a<=120)
         {
-            cout << "*" << " ";
+            cout << a << " Meter" << " Diizinkan" << endl;
         }
-        cout << endl;
-    }
+    else
+        {
+            cout << a << " Meter" << " Tidak diizinkan" << endl;
+        }
+    cout << "Program Selesai" << endl;
+
     return 0;
 }

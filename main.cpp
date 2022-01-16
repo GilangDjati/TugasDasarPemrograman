@@ -1,4 +1,4 @@
-// Program Untuk Menampilkan Matriks b x k Dengan Ukuran 5 x 5 yang Berisi Angka 1-25
+// Program Segitiga Bintang
 
 #include <iostream>
 
@@ -7,19 +7,18 @@ using namespace std;
 int main()
 {
 // Kamus
-    int n=1,b,k;
+    int b, k, t;
 
 // Algoritma
-    cout << "Program Untuk Menampilkan Matriks b x k Dengan Ukuran 5 x 5 yang Berisi Angka 1-25" << endl;
-    cout << "==================================================================================" << endl << endl;
-    for (b=0; b<5; b++)
+    cout << "Masukkan tinggi segitiga bintang = ";
+    cin >>t;
+    for (b=1; b<=t; b++)
+    {
+        for (k=b; k<=t; k++)
         {
-            for (k=0; k<5; k++)
-                {
-                    cout << n << " ";
-                    n++;
-                }
-                cout << endl;
+            cout << "*" << " ";
         }
+        cout << endl;
+    }
     return 0;
 }

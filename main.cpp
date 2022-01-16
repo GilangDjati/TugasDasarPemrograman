@@ -1,14 +1,16 @@
 #include <iostream>
+
 using namespace std;
 
 int main()
 {
-    int a,b;
-    float c;
-    a=10;
-    b=5;
-    c=float(a+b)/2;
-    cout<<"Isi Variabel a = "<<a<<endl;
-    cout<<"Isi Variabel b = "<<b<<endl;
-    cout<<"Isi Variabel c = "<<c<<endl;
+    int panjang, lebar, keliling, luas;
+    panjang = 5;
+    lebar = 7;
+    keliling = 2 * (panjang+lebar);
+    luas = panjang * lebar;
+    cout<<"Program Mencari Keliling dan Luas Persegi Panjang"<<endl;
+    cout<<"================================================="<<endl;
+    cout<<"Keliling = "<<keliling<<endl;
+    cout<<"Luas = "<<luas<<endl;
 }

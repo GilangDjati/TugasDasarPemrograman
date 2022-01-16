@@ -1,21 +1,30 @@
+// Program Penjumlahan Deret Bilangan Ganjil
+
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
-    float KelilingAlas, Luas, Volume;
-    #define phi 3.14                 // konstanta nilai phi
-    float r;                         // jari-jari tabung
-    float t;                         // tinggi tabung
-    KelilingAlas = 2 * phi * r;
-    Luas = 2 * phi * r * r;
-    Volume = phi * r * r * t;
+// Kamus
+    int i=1;                                                                // i sebagai bilangan
+    int n;                                                                  // n sebagai batas bilangan
+    int jumlah;
 
-    cout << "Program Mencari Keliling Alas, Luas, dan Volume Tabung" << endl;
-    cout << "======================================================" << endl;
-    cout << "KelilingAlas = " << KelilingAlas << endl;
-    cout << "Luas = " << Luas << endl;
-    cout << "Volume = " << Volume << endl;
+// Algoritma
+    cout << "Program Penjumlahan Deret Bilangan Ganjil" << endl;
+    cout << "=========================================" << endl << endl;
+    cout << "Masukkan n: ";
+    cin >> n;
+    for (int i=1; i<=n; i++)
+        {
+            if (i%2!=0)
+                {
+                    jumlah=jumlah+i;
+                    cout << i << " + ";
+                }
+        }
+    cout << " = " << jumlah << endl;
+    cout << "Finish" << endl;
     return 0;
 }

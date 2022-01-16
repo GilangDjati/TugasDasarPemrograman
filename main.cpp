@@ -1,4 +1,4 @@
-// Program Penjumlahan Deret Bilangan Prima
+// Program Untuk Menampilkan Matriks b x k Dengan Ukuran 5 x 5 yang Berisi Angka 1-25
 
 #include <iostream>
 
@@ -7,36 +7,19 @@ using namespace std;
 int main()
 {
 // Kamus
-    int in, faktor;
-    int out=0;
-    int cou=2;
-    int jumlah=0;
+    int n=1,b,k;
 
 // Algoritma
-    cout << "Program Penjumlahan Deret Bilangan Prima" << endl;
-    cout << "========================================" << endl << endl;
-    cout << "Masukkan n: ";
-    cin >> in;
-    while (out<in)
+    cout << "Program Untuk Menampilkan Matriks b x k Dengan Ukuran 5 x 5 yang Berisi Angka 1-25" << endl;
+    cout << "==================================================================================" << endl << endl;
+    for (b=0; b<5; b++)
         {
-            faktor=0;
-            for (int i=1; i<=cou; i++)
+            for (k=0; k<5; k++)
                 {
-                    if (cou%i==0)
-                        {
-                            faktor++;
-                        }
+                    cout << n << " ";
+                    n++;
                 }
-            if (faktor==2)
-                {
-                    cout << cou << " + " << " ";
-                    out++;
-                    jumlah+=cou;
-                }
-            cou++;
+                cout << endl;
         }
-        cout << " = " << jumlah << endl;
-        cout << "Finish" << endl;
-
     return 0;
 }
